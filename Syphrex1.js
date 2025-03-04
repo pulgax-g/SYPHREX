@@ -61,6 +61,16 @@ titleImg.style.width = "80px";
 titleImg.style.marginLeft = "10px";
 topBar.appendChild(titleImg);
 
+// Texto "𝖕𝖗𝖊𝖒𝖎𝖚𝖒"
+const premiumText = document.createElement("span");
+premiumText.innerText = "𝖕𝖗𝖊𝖒𝖎𝖚𝖒";
+premiumText.style.color = "white";
+premiumText.style.fontSize = "16px";
+premiumText.style.fontFamily = "monospace";
+premiumText.style.marginLeft = "auto";
+premiumText.style.marginRight = "15px";
+topBar.appendChild(premiumText);
+
 // Botón de cerrar
 const closeBtn = document.createElement("button");
 closeBtn.innerText = "X";
@@ -173,4 +183,4 @@ buttonContainer.appendChild(clearBtn);
 
 // Inicializar números de línea
 updateLineNumbers();
-};
+
